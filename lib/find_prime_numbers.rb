@@ -13,5 +13,3 @@ def find_prime_numbers(num)
 	puts primes
 	return primes
 end
-
-find_prime_numbers(25)

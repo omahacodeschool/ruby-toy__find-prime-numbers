@@ -17,6 +17,7 @@ def find_prime_numbers(num)
                 #It also skips over the nil values already changed by the conditional.  
             end
         end
-        end
-    arrayofnum.compact!
+    end
+    arr = arrayofnum.compact
+    return arr
 end

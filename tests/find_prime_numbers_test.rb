@@ -14,13 +14,21 @@ class FindPrimeNumbersTest < Minitest::Test
 
   # If you choose to do the bonuses, write out your tests below:
 
-  # def test_negative_input
-  # end
+   def test_negative_input
+    num = -25
+    assert_equal("Bad input, value must be greater than 1", find_prime_numbers(num))
+   end
 
-  # def test_non_integer_input
-  # end
+   def test_non_integer_input
+    num = "not number"
+    assert_equal("Bad input, value must be number", find_prime_numbers(num))
 
-  # def test_with_number_one
-  # end
+   end
+
+   def test_with_number_one
+    num = 1
+    assert_equal("Bad input, value must be greater than 1", find_prime_numbers(num))
+
+   end
 
 end

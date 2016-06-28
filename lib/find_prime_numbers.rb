@@ -10,6 +10,5 @@ def find_prime_numbers(num)
 			prange.delete(x*i) #deletes numbers in prange
 		end
 	end
-	puts primes
 	return primes
 end

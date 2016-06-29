@@ -7,10 +7,8 @@ def find_prime_numbers(num)
 
 	(2..num).each do |divisor|
 		original.each do |nonprime|
-			if nonprime % divisor == 0 
-				if nonprime != divisor
+			if nonprime % divisor == 0 && nonprime != divisor
 					nonprimes.push(nonprime)
-				end
 			end
 		end
 	end

@@ -6,9 +6,9 @@ def find_prime_numbers(num)
 	composites = []
 
 	interval.each do |x|
-		interval.each do |composite|
-			if composite % x == 0 && composite != x
-					composites.push(composite)
+		interval.each do |y|
+			if y % x == 0 && y != x
+					composites.push(y)
 			end
 		end
 	end
